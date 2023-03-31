@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+<body>
+
+    <h1 id="head1">Document object model</h1>
+
+    <div id="first">
+    <p class="para">paragraph1</p>
+    <p class="para">paragraph 2</p>
+    <p class="para">paragraph 3</p>
+    <p class="para">paragraph 4</p>
+   </div>
+
+    <a href=""> submit</a>
+    <a href="">go to next page page</a>
+
+    <script>
+
+        var x=document.getElementById("head1").style.color="red";
+       var y= document.getElementById("head1").style.textAlign="center";
+
+       var z= document.getElementById("head1");
+
+        console.log(z);
+
+      var a = document.getElementsByClassName("para");
+     console.log(a);
+     console.log(a[0]);
+
+     var b= document.querySelector("p");
+     console.log(b);
+
+     var c= document.querySelectorAll("p");
+     console.log(c);
+
+     var d = document.getElementsByTagName("p");
+     console.log(d);
+
+     console.log(document.body);
+     console.log(document.head);
+     console.log(document.title);
+     console.log(document.anchors);
+     console.log(document.forms);
+     console.log(document.images);
+     console.log(document.scripts);
+
+     document.write("<h2> this is heading 2 create by java script</h2>");
+     var e =document.createElement("h1");
+     console.log(e);
+
+     e.innerText="hey kalyan";
+
+
+
+     var parent=document.getElementById("first");
+     parent.appendChild(e);
+
+  
+
+     console.log(parent.innerText);
+
+    
+
+
+
+
+    </script>
+    
+</body>
+</html>
